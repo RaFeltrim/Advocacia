@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escritório de Advocacia especializado em Direito Digital, oferecendo consultoria em LGPD, assessoria em Marco Civil da Internet, defesa em cibercrimes, e muito mais.">
+    <meta name="keywords" content="advocacia, direito digital, LGPD, Marco Civil da Internet, cibercrimes, consultoria jurídica">
+    <meta name="author" content="Nome do Advogado">
+    <title>Escritório de Advocacia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo do Escritório de Advocacia">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Quem Somos</a></li>
+                    <li><a href="#areas">Áreas de Atuação</a></li>
+                    <li><a href="#news">Notícias</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="social-media-icons">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="images/icon-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                    <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><img src="images/icon-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+                <div class="language-selector">
+                    <a href="#" data-lang="pt"><img src="images/brazil.png" alt="Português" class="language-icon brazil"></a>
+                    <a href="#" data-lang="en"><img src="images/usa.png" alt="English" class="language-icon"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" role="banner">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item active"><img src="images/advocacy-image1.jpg" alt="Imagem 1 sobre advocacia"></div>
+                <div class="carousel-item"><img src="images/advocacy-image2.jpg" alt="Imagem 2 sobre advocacia"></div>
+                <div class="carousel-item"><img src="images/advocacy-image3.jpg" alt="Imagem 3 sobre advocacia"></div>
+                <div class="carousel-phrase" id="carousel-phrase">Defendendo seus direitos com excelência.</div>
+                <div class="carousel-controls">
+                    <button class="carousel-prev" aria-label="Anterior">❮</button>
+                    <button class="carousel-next" aria-label="Próximo">❯</button>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Quem Somos</h2>
+            <div class="about-content">
+                <img src="images/advocacy-image2.jpg" alt="Advogada Fulano" class="advogado-image">
+                <div>
+                    <p>Fulano é especializado em Direito Digital, oferecendo consultoria em LGPD, assessoria em Marco Civil da Internet, defesa em cibercrimes, e muito mais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas" aria-labelledby="areas-heading">
+            <h2 id="areas-heading">Áreas de Atuação</h2>
+            <div class="areas-content">
+                <div class="area"><h3>Direito Cível</h3></div>
+                <div class="area"><h3>Direito Empresarial</h3></div>
+                <div class="area"><h3>Direito Imobiliário</h3></div>
+                <div class="area"><h3>Blindagem Patrimonial</h3></div>
+                <div class="area"><h3>Planejamento Sucessório</h3></div>
+                <div class="area"><h3>Recuperação de Empresas</h3></div>
+            </div>
+        </section>
+
+        <section id="news" aria-labelledby="news-heading">
+            <h2 id="news-heading">Notícias</h2>
+            <div class="news-container">
+                <div class="row justify-content-center news-content">
+                    <!-- As notícias serão inseridas aqui pelo JavaScript -->
+                </div>
+                <div class="col-md-12 exibicao-resultados text-center" style="margin-top: 15px; color: #fff;">
+                    <span>Exibindo de 1 a 4 resultados (total: 17)</span>
+                </div>
+                <div class="col-md-12 text-center">
+                    <nav>
+                        <ul class="pagination" style="font-size: 14px">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-12 text-center">
+                    <br>
+                    <p><a href="noticias" class="btn btn-outline-elegant mt-4" style="border-radius:100px;box-shadow: none; color: #fff; border: 1px solid #fff;">Ver Mais</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contato</h2>
+            <div class="contact-sections">
+                <div class="contact-info-section content">
+                    <div class="container_conteudo_informativo" style="position:relative;max-width:100%;">
+                        <table border="0" cellpadding="1" cellspacing="1" style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 105px; vertical-align: middle; text-align: center;">
+                                        <i aria-hidden="true" class="fa fa-envelope" style="color:#ccc;font-size:36px;">&nbsp;</i>
+                                    </td>
+                                    <td style="vertical-align: middle;">
+                                        <p><strong><span style="font-size:16px;">Email</span></strong><br>
+                                            contato@advocacia.com.br</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; text-align: left;">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; vertical-align: middle; text-align: center;">
+                                        <i aria-hidden="true" class="fa fa-phone" style="color:#ccc;font-size:36px;">&nbsp;</i>
+                                    </td>
+                                    <td style="vertical-align: middle;"><strong><span style="font-size:16px;">Telefones</span></strong><br>
+                                        (00) 0000 - 0000<br>
+                                        <br>
+                                        <strong><span style="font-size:16px;">Whatsapp</span></strong><br>
+                                        (00) 0000 - 0000</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; text-align: left;">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; vertical-align: middle; text-align: center;">
+                                        <i aria-hidden="true" class="far fa-clock" style="color:#ccc;font-size:36px;">&nbsp;</i>
+                                    </td>
+                                    <td style="vertical-align: middle;">
+                                        <p><strong><span style="font-size:16px;">Horário de funcionamento</span></strong><br>
+                                            Segunda à Sexta de 08:00hrs às 18hrs</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; vertical-align: middle; text-align: center;">&nbsp;</td>
+                                    <td style="vertical-align: middle;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 105px; vertical-align: middle; text-align: center;">
+                                        <span class="fas fa-map-marker-alt" style="color:#ccc;font-size:36px;"></span>
+                                    </td>
+                                    <td style="vertical-align: middle;">
+                                        <div style="line-height:1.6;"><strong><span style="font-size: 16px;">Endereços</span></strong></div>
+
+                                        <div style="line-height:1.6;"><strong><span style="font-size: 16px;"></span></strong><br>
+                                            <span style="font-size:14px;">Rua rua, n 00, Centro, </span></div>
+
+                                        <div style="line-height:1.6;"><span style="font-size:14px;">Cidade - UF<br>
+                                                CEP: 00.000-000</span><span style="font-size:14px;"></span></div>
+
+                                        <div style="line-height:1.6;">&nbsp;</div>
+
+                                        <div style="line-height:1.6;"><span style="font-size:14px;">Rua rua rua, n 00, Cidade, </span></div>
+
+                                        <div style="line-height:1.6;"><span style="font-size:14px;">Estado - UF</span></div>
+
+                                        <div style="line-height:1.6;"><span style="font-size:14px;">CEP: 00000-000</span></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="contact-form-section content">
+                    <div class="contact-form">
+                        <h3 class="titulo-text-contato">Fale Conosco!</h3>
+                        <p class="contato-texto">Tem alguma dúvida, sugestão ou crítica a fazer? Então entre em contato conosco. Suas dúvidas serão esclarecidas e sua opinião é fundamental para o nosso aperfeiçoamento.</p>
+                        <form id="contactForm">
+                            <div class="input-container">
+                                <span class="icon"><i class="fa fa-user"></i></span>
+                                <input placeholder="Seu nome" type="text" class="form-control" id="tbxNomeControl" aria-label="nome">
+                            </div>
+                            <div class="input-container">
+                                <span class="icon"><i class="fa fa-envelope"></i></span>
+                                <input placeholder="Seu email" type="text" class="form-control" id="tbxEmailControl" aria-label="email" data-email="1">
+                            </div>
+                            <div class="input-container">
+                                <span class="icon"><i class="fa fa-phone"></i></span>
+                                <input placeholder="Seu telefone" type="text" class="form-control maskphone" id="tbxTelefoneControl" aria-label="telefone" maxlength="15">
+                            </div>
+                            <div class="input-container">
+                                <span class="icon"><i class="fa fa-bars"></i></span>
+                                <textarea placeholder="Mensagem" class="form-control" id="tbxMensagemControl" aria-label="mensagem"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button id="ctl00_ContentPlaceHolderCorpo_ControlEnviarEmailBootstrap4_Button1" type="button" onclick="javascript:EnviarEmailControl();" class="btn btn-success btn_enviar_email"><i class="fa fa-paper-plane-o"></i>&nbsp; Enviar mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Escritório de Advocacia</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

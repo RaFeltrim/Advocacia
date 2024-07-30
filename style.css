@@ -1,0 +1,552 @@
+/* General styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparente */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 110px; /* Aumentado em 20px */
+    height: 110px; /* Aumentado em 20px */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-selector .language-icon {
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.language-selector .language-icon.brazil {
+    width: 37px; /* Aumentado em 5px */
+    height: 29px; /* Aumentado em 5px */
+}
+
+.language-selector .language-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 400px; /* Ajuste conforme necessário */
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-phrase {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    animation: fadeInOut 6s infinite;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+/* Sections styling */
+main {
+    flex: 1;
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.areas-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.area {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.news-item {
+    flex: 1 1 calc(25% - 10px);
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; /* Definindo altura fixa */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #003366;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.pagination a.active {
+    font-weight: bold;
+}
+
+.contact-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info-section,
+.contact-form-section {
+    flex: 1 1 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ccc;
+    border-radius: 10px;
+    padding: 13% 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0);
+    min-height: 500px; /* Definindo altura mínima para igualar os cartões */
+    box-sizing: border-box;
+}
+
+.contact-info-section {
+    justify-content: center;
+}
+
+.contact-form-section {
+    justify-content: space-between;
+}
+
+.contact-info-section:hover,
+.contact-form-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info p img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.btn_enviar_email {
+    padding: 12px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_enviar_email:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animation for the carousel phrase */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+}
+
+/* Style for the lawyer image */
+.advogado-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Additional styling for error handling */
+.container_envio_email_site .input-group i {
+    width: 18px;
+}
+
+.container_envio_email_site .row {
+    margin-top: 5px;
+}
+
+.container_envio_email_site textarea {
+    resize: vertical;
+}
+
+.container_envio_email_site .erro_preenchimento * {
+    border-color: #a71818 !important;
+}
+
+.container_envio_email_site .erro_preenchimento .form-control {
+    border: 1px solid #a71818 !important;
+    filter: drop-shadow(1px 1px 7px #a71818);
+}
+
+/* Styling for the contact paragraph */
+.contato-texto {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Card styling */
+.card {
+    transition: 0.3s;
+    background-color: #fff;
+    color: #000;
+}
+
+.card:hover {
+    box-shadow: 0 2px 20px 3px rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.col-listagem .btn {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.col-listagem.col-md-4.col-lg-3 {
+    padding: 15px;
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 1.3em;
+    opacity: 0.9;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #000;
+}
+
+.card .card-body .card-text {
+    height: 60px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: .8rem;
+    color: #747373;
+    font-weight: 300;
+}
+
+.card .btn {
+    float: right;
+    margin: 0;
+    padding: .64rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.img-fluid {
+    height: 180px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.col-listagem {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .col-listagem {
+        margin-top: 15px;
+    }
+}
+
+ul.pagination li a {
+    height: 30px;
+    border-radius: 5px;
+    background: #272727;
+    color: #fff;
+    width: 25px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: .3s;
+}
+
+ul.pagination li.active a {
+    background: #5f5f5f;
+    color: #fff;
+}
+
+ul.pagination li a:hover {
+    transform: scale(1.15);
+}
+
+.img-fluid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-controls {
+    text-align: center;
+}
+
+.carousel-controls a {
+    position: initial !important;
+    display: initial !important;
+}
+
+.carousel-controls a span {
+    background-color: #000;
+}
+
+.carousel-controls a span i {
+    padding: 10px;
+}
